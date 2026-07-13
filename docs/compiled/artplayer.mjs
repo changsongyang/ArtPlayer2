@@ -5013,6 +5013,7 @@ Artplayer.LOG_VERSION = true;
 Artplayer.USE_RAF = false;
 Artplayer.REMOVE_SRC_WHEN_DESTROY = true;
 if (isBrowser) {
+  window.Artplayer = Artplayer;
   setStyleText("artplayer-style", style);
   setTimeout(() => {
     if (Artplayer.LOG_VERSION) {

@@ -255,6 +255,7 @@ Artplayer.USE_RAF = false
 Artplayer.REMOVE_SRC_WHEN_DESTROY = true
 
 if (utils.isBrowser) {
+  window.Artplayer = Artplayer
   utils.setStyleText('artplayer-style', style)
 
   setTimeout(() => {
